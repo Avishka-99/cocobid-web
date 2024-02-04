@@ -10,3 +10,26 @@
     align-content: flex-start;
 
 }
+.auctionContainer{
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: contain;
+    align-content: flex-start;
+    height: 89%;
+    padding: 1%;
+    gap: 1%;
+    width: 100%;
+}
+.resetBtn{
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60%;
+    color: white;
+}
+.resetBtn:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}

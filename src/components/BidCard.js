@@ -1,19 +1,26 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useDispatch } from 'react-redux';
-import { SetAuctionImages,SetAuctionDetails } from '../actions/SetUserAction';
+import { SetAuctionImages, SetAuctionDetails, SetBidDetails } from '../actions/SetUserAction';
 import '../styles/components/Bidcard.css';
 import Axios from '../api/Axios';
 import * as API_ENDPOINTS from '../api/ApiEndpoints';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 export default function BidCard(props) {
     const dispatch = useDispatch();
     const getAuctionImges = (id) => {
-        Axios.get(API_ENDPOINTS.GET_AUCTION_IMAGES_URL+id).then((response)=>{
+        sessionStorage.setItem('aucid', id);
+        Axios.get(API_ENDPOINTS.GET_AUCTION_IMAGES_URL + id).then((response) => {
             dispatch(SetAuctionImages(response.data.data))
         })
-        Axios.get(API_ENDPOINTS.GET_AUCTION_DATA_URL+'/'+id).then((respose)=>{
+        Axios.get(API_ENDPOINTS.GET_AUCTION_DATA_URL + '/' + id).then((respose) => {
             dispatch(SetAuctionDetails(respose.data.data))
         })
-        
+        Axios.get(API_ENDPOINTS.GET_BID_INFO_URL + id).then((response) => {
+            console.log(response.data.data)
+            dispatch(SetBidDetails(response.data.data))
+        })
 
     }
     const Ref = useRef(null);
@@ -82,6 +89,7 @@ export default function BidCard(props) {
                 alignItems: 'center',
                 justifyContent: 'center',
                 boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+                outline: '3px solid #274c5b'
             }}
                 className='Bidcard'
                 onClick={() => props.fun(false)}
@@ -111,46 +119,56 @@ export default function BidCard(props) {
                 backgroundColor: '#EEEDEB',
                 marginBottom: '1%',
                 borderRadius: 15,
+                outline: '3px solid #274c5b'
 
             }}
                 className='Bidcard'
-                onClick={() => { getAuctionImges(props.data.Id); props.fun(true); }}
+
             >
                 <div style={{
                     width: '100%',
-                    height: 150
+                    height: '25%',
+                    padding: '8px'
                 }}>
                     {props.data.description}
                 </div>
-                <div style={{
-                    width: '100%',
-                    height: 50,
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                }}>
+                <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '2%', width: '96%', justifyContent: 'space-between' }}>
                     <div style={{
-                        width: '30%',
+                        width: '45%',
                         backgroundColor: '#274c5b',
                         padding: '5px',
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'center',
-                        marginLeft: '2%',
+                        justifyContent: 'space-evenly',
                         borderRadius: '10px',
                         color: 'white'
-                    }}>{extractedDate}</div>
+                    }}><AccessTimeIcon sx={{ fontSize: 30, fill: '#FFF' }} />{extractedDate}</div>
                     <div style={{
                         backgroundColor: '#274c5b',
                         padding: '5px',
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'right',
-                        marginRight: '2%',
                         borderRadius: '10px',
-                        color: 'white'
-                    }}>Base Price - Rs.{(props.data.basePrice).toFixed(2)}</div>
+                        color: 'white',
+                        width: '45%',
+                        justifyContent: 'space-evenly',
+                    }}><AttachMoneyIcon sx={{ fontSize: 30, fill: '#FFF' }} />Rs.{(props.data.basePrice).toFixed(2)}
+                    </div>
                 </div>
+                <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '2%', width: '96%' }}>
+                    <div style={{
+                        width: '100%',
+                        backgroundColor: '#274c5b',
+                        padding: '5px',
+                        display: 'flex',
+                        alignItems: 'center',
+
+                        borderRadius: '10px',
+                        color: 'white',
+                        marginTop: '2%'
+                    }}><LocationOnIcon sx={{ fontSize: 30, fill: '#FFF' }} />{props.data.city}</div>
+                </div>
+                <div className='uploadBtn' style={{ width: '96%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '2%' }} onClick={() => { getAuctionImges(props.data.Id); props.fun(true); }}>View</div>
 
             </div>
         )

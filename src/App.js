@@ -14,6 +14,8 @@ import ResetPassword from './views/landing/ResetPassword';
 import Otp from './views/landing/Otp';
 import ProtectedRoutes from './utils/ProtectedRoutes';
 import Toast from './components/Toast';
+import Modal from 'react-modal';
+        
 function App() {
   const [isConnected, setIsConnected] = useState(socket.connected);
   const [fooEvents, setFooEvents] = useState([]);
@@ -56,6 +58,7 @@ function App() {
   }, [user]);
   const [isSignedIn, setIsSignedIn] = useState(true);
   const [role, setRole] = useState("customer");
+  Modal.setAppElement('body')
   return (
     <div className="outerContainer">
       {user === 'customer' || user === 'Admin' || user === 'Staff' || user === 'resturantManager' || user === 'productManufacture' ? (

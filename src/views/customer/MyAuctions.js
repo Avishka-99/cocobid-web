@@ -41,7 +41,7 @@ export default function MyAuctions() {
       outline : '3px solid #274c5b'
     },
   };
-  Modal.setAppElement('body');
+  //Modal.setAppElement('body');
   const openModal = (type) => {
     setType(type);
     setIsOpen(true);

@@ -1,8 +1,9 @@
-import { SET_USER, SET_AUCTION_IMAGES, SET_AUCTION_DETAILS } from "../constants/ActionTypes";
+import { SET_USER, SET_AUCTION_IMAGES, SET_AUCTION_DETAILS, SET_BID_DETAILS } from "../constants/ActionTypes";
 const initialState = {
     user: "null",
     auctionImages: '',
-    auctionDetails: ''
+    auctionDetails: '',
+    bidDetails: ''
 }
 
 const SetUserReducer = (state = initialState, action) => {
@@ -23,6 +24,11 @@ const SetUserReducer = (state = initialState, action) => {
             return {
                 ...state,
                 auctionDetails: action.data,
+            }
+        case SET_BID_DETAILS:
+            return {
+                ...state,
+                bidDetails: action.data,
             }
         default: return state
     }
