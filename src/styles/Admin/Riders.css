@@ -1,0 +1,480 @@
+* {
+    font-family: "poppins-regular";
+  }
+  
+  .Ride-Container {
+    font-family: "poppins-regular";
+    padding-left: 5%;
+    padding-right: 2%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../assets/images/Admin/background-image.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .Ride-Top {
+    max-width: 1920px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Ride-Right {
+    margin-left: 2%;
+    display: inline-block;
+  }
+  
+  .Ride-TopLeft {
+    width: 800px;
+  }
+  
+  .Ride-TopRight {
+    width: 380px;
+    height: 300px;
+    background-color: #F4FFF8;
+    border-radius: 25px;
+    padding: 25px;
+  }
+  
+  .Ride-Bottom {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Ride-BottomLeft {
+    width: 800px;
+  }
+  
+  .Ride-TopRight-heading {
+    margin-bottom: 15px;
+    font-weight: bolder;
+  }
+  
+  .Ride-BottomRight-heading {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+  }
+  
+  .Ride-TopLine {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Ride-HeadingText {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .Ride-NotificationButton {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #7eb693;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Ride-SubHeadingText {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+  }
+
+  .Ride-nameText {
+    padding-top: 10px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+  }
+
+  .Ride-subNameText {
+    padding-top: 10px;
+    margin-left: 80px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3A747C;
+  }
+  
+  .Ride-FilterButton1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    height: 30px;
+    width: 90px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .Ride-FilterButton2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    height: 30px;
+    width: 90px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -30px;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .Ride-Filter-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 120px;
+    background-color: #bcdac8;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .Ride-Filter-menu2 {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 150px;
+    background-color: #bcdac8;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .Ride-Filter-container {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .Ride-Filter-container:last-child {
+    border-bottom: none;
+  }
+
+  
+  .Ride-DateText {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b7e74;
+  }
+  
+  .Ride-BodyText {
+    padding-top: 10px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .Ride-SubContainer {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+  
+  .Ride-CardContainer {
+    width: 250px;
+    height: 150px;
+    background-color: #bcdac8;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Ride-IconContainer {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 180px;
+    width: 180px;
+    background-image: url("../../assets/images/Admin/delivery.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+	  transition: transform 0.3s;
+  }
+
+  .Ride-IconContainer:hover {
+    transform: scale(1.05) translateY(-5px);
+    cursor: pointer;
+  }
+
+  .Ride-FirstDivider {
+    width: 125px;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Ride-SecondDivider {
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 125px;
+    height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+  }
+    
+  .Ride-RightContainer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 380px;
+    height: 80%;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow-y: scroll; /* Add a vertical scrollbar */
+  }
+
+  /* Webkit-based browsers (Google Chrome) */
+  .Ride-RightContainer::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+  }
+
+  .Ride-RightContainer::-webkit-scrollbar-thumb {
+    background: #7EB693; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+  }
+
+  .Ride-RightContainer::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the thumb on hover */
+  }
+
+  .Ride-RightContainer::-webkit-scrollbar-track {
+    background: #bcdac8; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners of the track */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Ride-MidLine {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .Ride-Customer {
+    display: flex;
+  }
+  
+  .Ride-ImgIcon {
+    margin-top: -4px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #7EB693;
+    border-radius: 50%;
+  }
+  
+  .Ride-TopLeftContainer {
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 800px;
+    height: 300px;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+  }
+  
+  .Ride-BottomLeftContainer {
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 800px;
+    height: 250px;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+  }
+
+  /* Webkit-based browsers (Google Chrome) */
+  .anl-bottomLeftContainer::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+  }
+
+  .anl-bottomLeftContainer::-webkit-scrollbar-thumb {
+    background: #7EB693; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+  }
+
+  .anl-bottomLeftContainer::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the thumb on hover */
+  }
+
+  .anl-bottomLeftContainer::-webkit-scrollbar-track {
+    background: #bcdac8; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners of the track */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .Ride-SearchBar {
+    width: 100%; /* Use 100% to fill the container */
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Ride-SearchBar::after {
+    content: "\1F50D";
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .Ride-Activities {
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .Ride-Activities:hover {
+    transform: scale(1.05) translateY(-5px);
+    cursor: pointer;
+    background-color: #ccc;
+  }
+
+  .Ride-Activities-Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .Ride-ActivityIconContainer {
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-image: url("../../assets/images/Admin/delivery.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Ride-ActivityText {
+    margin-top: -25px;
+    padding-top: -10px;
+    margin-left: 65px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .Ride-textContainer {
+    width: 50%;
+  }
+  
+  .Ride-textInfo {
+    margin-top: -25px;
+    padding-top: -10px;
+    margin-left: 65px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    width: 50%;
+  }
+
+  .Ride-subTextInfo {
+    margin-top: -20px;
+    padding-top: 0px;
+    margin-left: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+  }
+
+  .Ride-Details {
+    display: flex;
+    margin-right: 120px;
+    margin-left: 300px;
+    margin-top: -250px;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .Ride-Name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  .NameLabel {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .NameValue {
+    font-size: 15px;
+    font-weight: bold;
+    color: #888;
+  }
+ 
+  .Ride-Divider {
+    border-top: 1px solid #7EB693; /* Adjust color and thickness as needed */
+    height: 5px; /* Adjust the height of the divider as needed */
+    margin: 10 0px; /* Adjust the margin to control spacing */
+}

@@ -1,0 +1,12 @@
+.customerhome{
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 1%;
+    height: 100%;
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('../../assets/images/coco.jpg');
+    background-size: contain;
+    align-content: flex-start;
+
+}

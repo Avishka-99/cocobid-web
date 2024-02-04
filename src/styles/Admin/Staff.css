@@ -1,0 +1,454 @@
+* {
+    font-family: "poppins-regular";
+}
+
+.Staff-Container {
+    font-family: "poppins-regular";
+    padding-left: 5%;
+    padding-right: 2%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../assets/images/Admin/background-image.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Staff-Top {
+    max-width: 1920px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Staff-Right {
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.Staff-TopLeft {
+    width: 800px;
+}
+
+.Staff-TopRight {
+    width: 380px;
+    height: 300px;
+    background-color: #F4FFF8;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.Staff-Bottom {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Staff-BottomLeft {
+    width: 800px;
+}
+
+.Staff-TopRight-heading {
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.Staff-BottomRight-heading {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.Staff-TopLine {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Staff-HeadingText {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.Staff-NotificationButton {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #7eb693;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Staff-SubHeadingText {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Staff-FilterButton1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    margin-top: 5px;
+    height: 30px;
+    width: 90px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -25px;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.Staff-FilterButton2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    margin-top:-25px;
+    height: 30px;
+    width: 90px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.Staff-Filter-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 120px;
+    background-color: #bcdac8;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.Staff-Filter-menu2 {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 140px;
+    background-color: #bcdac8;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.Staff-Filter-container {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.Staff-Filter-container:last-child {
+    border-bottom: none;
+}
+
+
+.Staff-AddButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    margin-top: 5px;
+    height: 30px;
+    width: 120px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -25px;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.Staff-DateText {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b7e74;
+}
+
+.Staff-BodyText {
+    padding-top: 10px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Staff-SubContainer {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.Staff-CardContainer {
+    width: 250px;
+    height: 150px;
+    background-color: #bcdac8;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Staff-FirstDivider {
+    width: 125px;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.Staff-SecondDivider {
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 125px;
+    height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.Staff-RightContainer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 380px;
+    height: 90%;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+  /* Webkit-based browsers (Google Chrome) */
+  .Staff-RightContainer::-webkit-scrollbar {
+	width: 8px; /* Width of the entire scrollbar */
+  }
+  
+  .Staff-RightContainer::-webkit-scrollbar-thumb {
+	background: #7EB693; /* Color of the scrollbar thumb */
+	border-radius: 5px; /* Rounded corners of the thumb */
+  }
+  
+  .Staff-RightContainer::-webkit-scrollbar-thumb:hover {
+	background: #888; /* Color of the thumb on hover */
+  }
+  
+  .Staff-RightContainer::-webkit-scrollbar-track {
+	background: #bcdac8; /* Color of the scrollbar track */
+	border-radius: 10px; /* Rounded corners of the track */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+.Staff-MidLine {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Staff-Customer {
+    display: flex;
+}
+
+.Staff-ImgIcon {
+    margin-top: -4px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #7EB693;
+    border-radius: 50%;
+}
+
+.Staff-TopLeftContainer {
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 800px;
+    height: 250px;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+}
+
+.Staff-BottomLeftContainer {
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 800px;
+    height: 200px;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+}
+
+/* Styles for the table area */
+.Staff-tableArea {
+	margin-top: 1%;
+	display: flex;
+	justify-content: left;
+	max-width: 100%;
+	width: 100%;
+	max-height: 400px;
+	margin-top: 3px;
+	overflow-y: scroll;
+}
+
+/* Webkit-based browsers (Google Chrome) */
+.Staff-tableArea::-webkit-scrollbar {
+	width: 8px; /* Width of the entire scrollbar */
+}
+
+.Staff-tableArea::-webkit-scrollbar-thumb {
+	background: #7EB693; /* Color of the scrollbar thumb */
+	border-radius: 5px; /* Rounded corners of the thumb */
+}
+
+.Staff-tableArea::-webkit-scrollbar-thumb:hover {
+	background: #888; /* Color of the thumb on hover */
+}
+
+.Staff-tableArea::-webkit-scrollbar-track {
+	background: #bcdac8; /* Color of the scrollbar track */
+	border-radius: 10px; /* Rounded corners of the track */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the database table */
+.Staff-dbTable {
+	max-width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	table-layout: auto;
+	overflow-y: scroll;
+}
+
+/* Styles for table headers */
+.Staff-dbTable th {
+	background-color: #BCDAC8;
+	color: #772b8d;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Styles for first and last table headers */
+.Staff-dbTable th:first-child {
+	border-top-left-radius: 25px;
+}
+
+.Staff-dbTable th:last-child {
+	border-top-right-radius: 25px;
+}
+
+/* Styles for table headers and data cells */
+.Staff-dbTable th,
+.Staff-dbTable td {
+	padding: 8px;
+	text-align: center;
+	width: max-content; /* Adjust the width as needed */
+	height: 40px;
+	color: black;
+	font-size: 13px;
+	text-align: center;
+}
+
+/* Styles for even and odd rows in the table */
+.Staff-dbTable tbody tr:nth-child(even) {
+	background-color: white;
+}
+
+.Staff-dbTable tbody tr:nth-child(odd) {
+	background-color: #F4FFF8;
+	color: white;
+}
+
+.Staff-Activities {
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.Staff-Activities:hover {
+    transform: scale(1.05) translateY(-5px);
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.Staff-Activities-Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Staff-ActivityIconContainer {
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-image: url("../../assets/images/Admin/staff.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Staff-ActivityText {
+    margin-top: -25px;
+    padding-top: -10px;
+    margin-left: 65px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.Staff-Divider {
+    border-top: 1px solid #7EB693; /* Adjust color and thickness as needed */
+    height: 5px; /* Adjust the height of the divider as needed */
+    margin: 10 0px; /* Adjust the margin to control spacing */
+}

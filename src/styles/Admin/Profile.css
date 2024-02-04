@@ -1,0 +1,462 @@
+* {
+    font-family: "poppins-regular";
+}
+
+.Prof-Container {
+    font-family: "poppins-regular";
+    padding-left: 5%;
+    padding-right: 2%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../assets/images/Admin/background-image.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Prof-Top {
+    max-width: 1920px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Prof-Right {
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.Prof-TopLeft {
+    width: 800px;
+}
+
+.Prof-TopRight {
+    width: 380px;
+    height: 300px;
+    background-color: #F4FFF8;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.Prof-Bottom {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Prof-BottomLeft {
+    width: 800px;
+}
+
+.Prof-TopRight-heading {
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.Prof-BottomRight-heading {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.Prof-TopLine {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Prof-HeadingText {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.Prof-NotificationButton {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #7eb693;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Prof-SubHeadingText {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Prof-FilterButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    margin-top: 5px;
+    height: 30px;
+    width: 110px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -25px;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.Prof-EditButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    height: 30px;
+    width: 80px;
+    background-color: #bcdac8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto; /* Push the filter button to the right */
+    margin-top: -25px;
+    cursor: pointer;
+    align-self: flex-start; /* Align it to the top of the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Prof-Filter-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 120px;
+    background-color: #bcdac8;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.Prof-Filter-container {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.Prof-Filter-container:last-child {
+    border-bottom: none;
+}
+
+.Prof-DateText {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b7e74;
+}
+
+.Prof-BodyText {
+    padding-top: 10px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    justify-content: flex-end; /* Move Prof-Details to the right */
+
+}
+
+.Prof-SubContainer {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.Prof-CardContainer {
+    width: 250px;
+    height: 150px;
+    background-color: #bcdac8;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Prof-FirstDivider {
+    width: 125px;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.Prof-SecondDivider {
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 125px;
+    height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.Prof-rightContainer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 380px;
+    height: 90%;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+    overflow-y: scroll; /* Add a vertical scrollbar */
+}
+
+/* Webkit-based browsers (Google Chrome) */
+.Prof-rightContainer::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+  }
+  
+.Prof-rightContainer::-webkit-scrollbar-thumb {
+    background: #7EB693; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+  }
+  
+.Prof-rightContainer::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the thumb on hover */
+  }
+  
+.Prof-rightContainer::-webkit-scrollbar-track {
+    background: #bcdac8; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners of the track */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }  
+
+.Prof-MidLine {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Prof-Customer {
+    display: flex;
+}
+
+.Prof-ImgIcon {
+    margin-top: -4px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #7EB693;
+    border-radius: 50%;
+}
+
+.Prof-TopLeftContainer {
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 800px;
+    height: 350px;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+}
+
+.Prof-BottomLeftContainer {
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 800px;
+    height: 220px;
+    background-color: #F4FFF8;
+    border-radius: 30px;
+    overflow-y: scroll; /* Add a vertical scrollbar */
+}
+
+/* Webkit-based browsers (Google Chrome) */
+.Prof-BottomLeftContainer::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+  }
+  
+.Prof-BottomLeftContainer::-webkit-scrollbar-thumb {
+    background: #7EB693; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+  }
+  
+.Prof-BottomLeftContainer::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the thumb on hover */
+  }
+  
+.Prof-BottomLeftContainer::-webkit-scrollbar-track {
+    background: #bcdac8; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners of the track */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }  
+
+.Prof-SearchBar {
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    bottom: 200px;
+    margin-left: 450px;
+    float: none;
+}
+
+.Prof-SearchBar::after {
+    content: "\1F50D";
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Prof-Activities {
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.Prof-Activities-Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Prof-IconContainer {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 180px;
+    width: 180px;
+    background-image: url("../../assets/images/Admin/Admin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+	transition: transform 0.3s;
+  }
+
+  .Prof-IconContainer:hover {
+	transform: scale(1.05) translateY(-5px);
+	cursor: pointer;
+  }
+
+.Prof-ActivityText {
+    margin-top: -25px;
+    padding-top: -10px;
+    margin-left: 55px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Prof-Detail {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+	transition: transform 0.3s;
+}
+
+ .Prof-Detail:hover {
+	transform: scale(1.05) translateY(-5px);
+	cursor: pointer;
+    background-color: #ccc;
+  }
+  
+.Prof-DetailLeft {
+    flex: 1;
+}
+  
+.Prof-DetailRight {
+    flex: 1;
+    font-weight: bold;
+    text-align: right;
+}
+
+.DetailDate {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #335E6C; /* Adjust the color as needed */
+  }
+  
+.DetailTime {
+    font-size: 12px; /* Adjust the font size for time */
+    color: #777; /* Adjust the color for time */
+}
+  
+.Prof-Divider {
+    border-top: 1px solid #7EB693; /* Adjust color and thickness as needed */
+    height: 5px; /* Adjust the height of the divider as needed */
+    margin: 10 0px; /* Adjust the margin to control spacing */
+}
+
+.Prof-Details {
+    display: flex;
+    margin-right: 120px;
+    margin-left: 300px;
+    margin-top: -230px;
+    text-align: left;
+    flex-direction: column;
+}
+  
+.Prof-Name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.NameLabel {
+    font-size: 16px;
+    color: #000;
+}
+  
+.NameValue {
+    font-size: 15px;
+    font-weight: bold;
+    color: #888;
+}
+
+.Prof-nameText {
+    padding-top: 10px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+  }
+
+.Prof-subNameText {
+    padding-top: 10px;
+    margin-left: 90px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #335E6C;
+}

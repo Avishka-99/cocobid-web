@@ -1,0 +1,8 @@
+export const SET_USER = 'SET_USER';
+export const SET_AUCTION_IMAGES = 'SET_AUCTION_IMAGES';
+export const SET_AUCTION_DETAILS = 'SET_AUCTION_DETAILS';
+
+
+
+
+

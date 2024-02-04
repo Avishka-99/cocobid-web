@@ -1,0 +1,87 @@
+/* signin csss */
+:root{
+    --bg: #fff;
+    --signInTheme: #fff;
+  
+  }.OtpContainer{
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg);
+  }
+  .OtpleftContainer{
+    width: 40%;
+    height: 100%;
+    background-image: url('../assets/images/coco-otp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .OtpRightContainer{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .OtpForm{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Slogan{
+    color: #7EB693;
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Yellowtail', yellowtail-regular;
+    font-size: 36px;
+  }
+  .Logintitle{
+    color: #274C5B;
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+    font-family: poppins-extrabold;
+    font-size: 60px;
+  }
+  .OtpDescription{
+    margin-top: 16%;
+    font-family: poppins-medium;
+    font-size: 20;
+    text-align: center;
+    word-wrap: normal;
+    color: #4D5959;
+  }
+  .otpInputBoxes{
+    width: 100%;
+    height: 20%;
+  }
+  .OtpRow{
+    margin-top: 5%;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+  }
+  .btn_login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: poppins-bold;
+    font-size: 22px;
+    color: white;
+    height: 100%;
+    width: 25%;
+    background-color: #274C5B;
+    border-radius: 25px;
+  }
+  .otpInputBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .otpInputBoxes>div{
+    justify-content: center;
+  }

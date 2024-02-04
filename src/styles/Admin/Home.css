@@ -1,0 +1,512 @@
+* {
+	font-family: "poppins-regular";
+  }
+  
+  .Home-Container {
+	font-family: "poppins-regular";
+	padding-left: 5%;
+	padding-right: 2%;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	background-image: url("../../assets/images/Admin/background-image.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+
+  .Home-CardIconContainer {
+	margin-top: 20px;
+	margin-left: 10px;
+	height: 128px;
+	background-image: url("../../assets/images/Admin/orders.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+  /* Styles for card icon container 2*/
+  .Home-CardIconContainer2 {
+	margin-top: 20px;
+	margin-left: 10px;
+	height: 128px;
+	background-image: url("../../assets/images/Admin/Fulfilled.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+  /* Styles for card icon container 3*/
+  .Home-CardIconContainer3 {
+	margin-top: 20px;
+	margin-left: 2px;
+	height: 128px;
+	background-image: url("../../assets/images/Admin/cancelled.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+  .Home-Top {
+	max-width: 1920px;
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .Home-Right {
+	margin-left: 2%;
+	display: inline-block;
+  }
+  
+  .Home-TopLeft {
+	width: 800px;
+  }
+  
+  .Home-TopRight {
+	width: 380px;
+	height: 300px;
+	background-color: #F4FFF8;
+	border-radius: 25px;
+	padding: 25px;
+  }
+  
+  .Home-Bottom {
+	max-width: 1920px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .Home-BottomLeft {
+	width: 800px;
+  }
+  
+  .Home-TopRight-heading {
+	margin-bottom: 15px;
+	font-weight: bolder;
+  }
+  
+  .Home-BottomRight-heading {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-weight: bolder;
+  }
+  
+  .Home-TopLine {
+	max-width: 800px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .Home-HeadingText {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+  }
+  
+  .Home-NotificationButton {
+	margin-top: 10px;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #7eb693;
+	border-radius: 50%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Home-SubHeadingText {
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	color: black;
+  }
+  
+  .Home-FilterButton1 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	margin-top: 5px;
+	height: 30px;
+	width: 90px;
+	background-color: #bcdac8;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	margin-left: auto;
+	margin-top: -25px;
+	cursor: pointer;
+	align-self: flex-start;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	position: relative;
+  }
+  
+  .Home-FilterButton2 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	margin-top: 5px;
+	height: 30px;
+	width: 90px;
+	background-color: #bcdac8;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	margin-left: auto;
+	margin-top: -10px;
+	cursor: pointer;
+	align-self: flex-start;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	position: relative;
+  }
+  
+  .Home-Filter-menu {
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 120px;
+	background-color: #bcdac8;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+  }
+  
+  .Home-Filter-container {
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+  }
+  
+  .Home-Filter-container:last-child {
+	border-bottom: none;
+  }
+  
+  .Home-DateText {
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #8b7e74;
+  }
+  
+  .Home-BodyText {
+	padding-top: 10px;
+	margin-left: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+  }
+  
+  .Home-SubContainer {
+	padding-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+  }
+  
+  .Home-CardContainer {
+	width: 250px;
+	height: 150px;
+	background-color: #bcdac8;
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 250px;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: transform 0.3s;
+  }
+
+  .Home-CardContainer:hover {
+	transform: scale(1.05) translateY(-5px);
+	cursor: pointer;
+	background-color: #7eb693;
+  }
+  
+  .Home-FirstDivider {
+	width: 125px;
+	height: 150px;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .Home-SecondDivider {
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 125px;
+	height: 150px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+  }
+  
+  .Home-topRightContainer {
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 380px;
+	height: 320px;
+	background-color: #F4FFF8;
+	border-radius: 30px;
+	overflow-y: scroll;
+  }
+
+  /* Webkit-based browsers (Google Chrome) */
+  .Home-topRightContainer::-webkit-scrollbar {
+	width: 8px; /* Width of the entire scrollbar */
+  }
+  
+  .Home-topRightContainer::-webkit-scrollbar-thumb {
+	background: #7EB693; /* Color of the scrollbar thumb */
+	border-radius: 5px; /* Rounded corners of the thumb */
+  }
+  
+  .Home-topRightContainer::-webkit-scrollbar-thumb:hover {
+	background: #888; /* Color of the thumb on hover */
+  }
+  
+  .Home-topRightContainer::-webkit-scrollbar-track {
+	background: #bcdac8; /* Color of the scrollbar track */
+	border-radius: 10px; /* Rounded corners of the track */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .Home-bottomRightContainer {
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 380px;
+	height: 320px;
+	background-color: #F4FFF8;
+	border-radius: 30px;
+  }
+  
+  .Home-MidLine {
+	padding-top: 2%;
+	display: flex;
+	justify-content: space between;
+  }
+  
+  .Home-Customer {
+	display: flex;
+  }
+  
+  .Home-ImgIcon {
+	margin-top: -4px;
+	margin-left: 5px;
+	margin-right: 10px;
+	height: 28px;
+	width: 28px;
+	border: 1px solid #7EB693;
+	border-radius: 50%;
+  }
+  
+  .Home-TopLeftContainer {
+	margin-top: 3px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 800px;
+	height: 250px;
+	background-color: #F4FFF8;
+	border-radius: 30px;
+  }
+  
+  .Home-BottomLeftContainer {
+	margin-top: 3px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 800px;
+	height: 250px;
+	background-color: #F4FFF8;
+	border-radius: 30px;
+  }  
+
+  .Home-CountText {
+	font-family: "poppins-extrabold";
+	font-size: 50px;
+	text-align: center;
+	margin-right: auto;
+    margin-top: -15px;
+	color: #000000;
+  }
+  
+  /* Styles for count goes up */
+  .Home-countGoesUp {
+	font-family: "poppins-extrabold";
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: green;
+  }
+  
+  /* Styles for count goes down */
+  .Home-CountGoesDown {
+	font-family: "poppins-extrabold";
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: crimson;
+  }
+  
+  /* Styles for the table area */
+  .Home-tableArea {
+	margin-top: 1%;
+	display: flex;
+	justify-content: left;
+	max-width: 100%;
+	width: 100%;
+	max-height: 400px;
+	margin-top: 3px;
+	overflow-y: scroll;
+  }
+
+  /* Webkit-based browsers (Google Chrome) */
+  .Home-tableArea::-webkit-scrollbar {
+	width: 8px; /* Width of the entire scrollbar */
+  }
+  
+  .Home-tableArea::-webkit-scrollbar-thumb {
+	background: #7EB693; /* Color of the scrollbar thumb */
+	border-radius: 5px; /* Rounded corners of the thumb */
+  }
+  
+  .Home-tableArea::-webkit-scrollbar-thumb:hover {
+	background: #888; /* Color of the thumb on hover */
+  }
+  
+  .Home-tableArea::-webkit-scrollbar-track {
+	background: #bcdac8; /* Color of the scrollbar track */
+	border-radius: 10px; /* Rounded corners of the track */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styles for the database table */
+  .Home-dbTable {
+	max-width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	table-layout: auto;
+	overflow-y: scroll;
+  }
+  
+  /* Styles for table headers */
+  .Home-dbTable th {
+	background-color: #BCDAC8;
+	color: #772b8d;
+	font-size: 15px;
+	font-weight: bold;
+  }
+  
+  /* Styles for first and last table headers */
+  .Home-dbTable th:first-child {
+	border-top-left-radius: 25px;
+  }
+  
+  .Home-dbTable th:last-child {
+	border-top-right-radius: 25px;
+  }
+  
+  /* Styles for table headers and data cells */
+  .Home-dbTable th,
+  .Home-dbTable td {
+	padding: 8px;
+	text-align: center;
+	width: max-content; /* Adjust the width as needed */
+	height: 40px;
+	color: black;
+	font-size: 13px;
+	text-align: center;
+  }
+
+  /* Styles for even and odd rows in the table */
+  .Home-dbTable tbody tr:nth-child(even) {
+	background-color: white;
+  }
+  
+  .Home-dbTable tbody tr:nth-child(odd) {
+	background-color: #F4FFF8;
+	color: white;
+  }
+  
+  .Home-pie-chart-container {
+	/* Set the pie chart container to take up the full width and height of its parent container */
+	width: 100%;
+	height: 100%;
+  
+	/* Center the pie chart both horizontally and vertically within the container */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .Home-Activities {
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+	cursor: pointer;
+	transition: transform 0.3s;
+  }
+
+  .Home-Activities:hover {
+	transform: scale(1.05) translateY(-5px);
+	cursor: pointer;
+	background-color: #ccc;
+  }
+
+  .Home-Activities-Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .Home-ActivityIconContainer {
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-image: url("../../assets/images/Admin/food.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Home-ActivityText {
+    margin-top: -25px;
+    padding-top: -10px;
+    margin-left: 65px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+	text-align: center;
+  }
+
+  .Home-Divider {
+    border-top: 1px solid #7EB693; /* Adjust color and thickness as needed */
+    height: 5px; /* Adjust the height of the divider as needed */
+    margin: 10 0px; /* Adjust the margin to control spacing */
+  }

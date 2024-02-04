@@ -1,0 +1,13 @@
+import Home from '../views/customer/Home';
+import MyBids from '../views/customer/MyBids';
+import MyAuctions from '../views/customer/MyAuctions';
+import AdminHome from '../views/admin/AdminHome';
+import Staff from '../views/admin/Staff';
+import Analytics from '../views/admin/Analytics';
+import Riders from '../views/admin/Riders';
+import Profile from '../views/common/Profile';
+import Sales from '../views/admin/Sales';
+import AdminProfile from '../views/admin/AdminProfile';
+import AddCategories from '../views/admin/AddCategories';
+import AddNewCategories from '../views/admin/addNewCategories';
+export {Sales, AdminHome, Staff, Analytics, Riders, Profile, Home, MyBids, MyAuctions,AdminProfile,AddCategories,AddNewCategories};

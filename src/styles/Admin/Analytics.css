@@ -1,0 +1,531 @@
+* {
+  font-family: "poppins-regular";
+}
+
+.Analytics-Container {
+  font-family: "poppins-regular";
+  padding-left: 5%;
+  padding-right: 2%;
+  display: inline-block;
+  width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+  /* Set the background image */
+  background-image: url("../../assets/images/Admin/background-image.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Styles for an element with class "anl-top" */
+.anl-top {
+  max-width: 1920px; /* Set the maximum width to 1920 pixels */
+  margin-top: 2%; /* Add a 2% margin at the top */
+  display: flex; /* Use a flex display to arrange child elements */
+  justify-content: space-between; /* Align child elements to be evenly spaced within the container */
+}
+
+.anl-right{
+  margin-left: 2%;
+  display: inline-block;
+}
+
+/* Styles for the top-left element */
+.anl-topLeft {
+  width: 800px; /* Set the width to 800 pixels */
+}
+
+/* Styles for the top-right element */
+.anl-topRight {
+  width: 380px; /* Set the width to 380 pixels */
+  height: 300px;
+  background-color: #F4FFF8;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+/* Styles for the bottom container */
+.anl-bottom {
+  max-width: 1920px; /* Set the maximum width to 1920 pixels */
+  /* margin-top: 2%; (Commented out margin for future reference) */
+  display: flex; /* Use a flex display to arrange child elements */
+  justify-content: space-between; /* Align child elements to be evenly spaced within the container */
+}
+
+/* Styles for the bottom-left element */
+.anl-bottomLeft {
+  width: 800px; /* Set the width to 800 pixels */
+}
+
+/* Styles for the bottom-right element */
+.anl-topRight-heading{
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+.anl-bottomRight-heading {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+/* Styles for the topline element */
+.anl-topLine {
+  /* padding-top: 2%; (Commented out padding for future reference) */
+  display: flex; /* Use a flex display to arrange child elements */
+  justify-content: space-between; /* Align child elements to be evenly spaced within the container */
+  max-width: 800px; /* Set the maximum width to 800 pixels */
+}
+
+/* Styles for the heading text */
+.anl-headingText {
+  font-size: 30px; /* Set the font size to 30 pixels */
+  font-weight: bold; /* Apply bold font weight */
+  color: black; /* Set the text color to black */
+}
+
+/* Styles for notification button */
+.anl-notificationButton {
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #7eb693;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for subheading text */
+.anl-subHeadingText {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+/* Styles for last month summary button*/
+.anl-summary {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-top: 5px;
+  height: 30px;
+  width: 160px;
+  background-color: #ccc;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: auto; /* Push the filter button to the right */
+  margin-top: -25px;
+  align-self: flex-start; /* Align it to the top of the container */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); */
+}
+
+/* Styles for filter button 1*/
+.anl-filterButton1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-top: 5px;
+  height: 30px;
+  width: 90px;
+  background-color: #bcdac8;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: auto; /* Push the filter button to the right */
+  margin-top: -25px;
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  align-self: flex-start; /* Align it to the top of the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Styles for filter button 2*/
+.anl-filterButton2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-top: 5px;
+  height: 30px;
+  width: 90px;
+  background-color: #bcdac8;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: auto; /* Push the filter button to the right */
+  margin-top: -10px;
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  align-self: flex-start; /* Align it to the top of the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.anl-filter-menu {
+  position: absolute;
+  top: 35px; /* Adjust the top position as needed */
+  right: 0;
+  width: 120px; /* Adjust the width as needed */
+  background-color: #bcdac8;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.anl-filter-container {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+.anl-filter-container:last-child {
+  border-bottom: none;
+}
+
+/* Styles for date text */
+.anl-dateText {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #8b7e74;
+}
+
+/* Styles for body text */
+.anl-bodyText {
+  padding-top: 1px;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Styles for the subcontainer */
+.anl-subContainer {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+/* Styles for card container */
+.anl-cardContainer {
+  width: 250px;
+  height: 150px;
+  background-color: #bcdac8;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.anl-cardContainer:hover {
+	transform: scale(1.05) translateY(-5px);
+	cursor: pointer;
+  background-color: #7eb693;
+}
+
+/* Styles for divider element 1 */
+.anl-firstDivider {
+  width: 125px;
+  height: 150px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styles for card icon container 1*/
+.anl-cardIconContainer {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 82px;
+  background-image: url("../../assets/images/Admin/sale.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Styles for card icon container 2*/
+.anl-cardIconContainer2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 80px;
+  background-image: url("../../assets/images/Admin/revenue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Styles for card icon container 3*/
+.anl-cardIconContainer3 {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 80px;
+  background-image: url("../../assets/images/Admin/expenses.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Styles for divider element 2 */
+.anl-secondDivider {
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 125px;
+  height: 150px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Styles for count text */
+.anl-countText {
+  font-family: "poppins-extrabold";
+  font-size: 30px;
+  text-align: center;
+  margin-left: 40px;
+}
+
+/* Styles for count goes up */
+.anl-countGoesUp {
+  font-family: "poppins-extrabold";
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+}
+
+/* Styles for count goes down */
+.anl-countGoesDown {
+  font-family: "poppins-extrabold";
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: crimson;
+}
+
+/* Styles for the top-right container */
+.anl-topRightContainer {
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 380px;
+  height: 320px;
+  background-color: #F4FFF8;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the midline container */
+.anl-midLine {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+/* Styles for the table area */
+.anl-tableArea {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/* Styles for the database table */
+.anl-dbTable {
+  max-width: 960px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 960px;
+}
+
+/* Styles for table headers */
+.anl-dbTable th {
+  background-color: #BCDAC8;
+  color: black;
+  font-size: 15px;
+}
+
+/* Styles for first and last table headers */
+.anl-dbTable th:first-child {
+  border-top-left-radius: 25px;
+}
+
+.anl-dbTable th:last-child {
+  border-top-right-radius: 25px;
+}
+
+/* Styles for table headers and data cells */
+.anl-dbTable th,
+.anl-dbTable td {
+  padding: 8px;
+  text-align: center;
+  width: max-content; /* Adjust the width as needed */
+  height: 40px;
+  color: black;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Styles for even and odd rows in the table */
+.anl-dbTable tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.anl-dbTable tbody tr:nth-child(odd) {
+  background-color: #F4FFF8;
+  color: white;
+}
+
+/* Styles for the bottom-right container */
+.anl-bottomRightContainer {
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 380px;
+  height: 320px;
+  background-color: #F4FFF8;
+  border-radius: 30px;
+  margin-left: auto; /* Move the container to the right */
+}
+
+/* Styles for the customer container */
+.anl-customer {
+  display: flex;
+}
+
+/* Styles for image icon */
+.anl-imgIcon {
+  margin-top: -4px;
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 28px;
+  width: 28px;
+  border: 1px solid #7EB693;
+  border-radius: 50%;
+}
+
+/* Styles for the top-left container */
+.anl-topLeftContainer {
+  margin-top: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 800px;
+  height: 210px;
+  background-color: #F4FFF8;
+  border-radius: 30px;
+}
+
+/* Styles for the bottom-left container */
+.anl-bottomLeftContainer {
+  margin-top: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 800px;
+  height: 200px;
+  background-color: #F4FFF8;
+  border-radius: 30px;
+}
+
+
+/* Styles for the search bar container */
+.anl-searchBar {
+  width: 250px;
+  height: 40px;
+  background-color: #fff; /* Set the background color to white */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 20px; /* Apply rounded corners */
+  display: flex;
+  align-items: center;
+  padding: 0 10px; /* Add padding to the left and right */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  bottom: 200px; /* Adjust the top position to align it correctly */
+  margin-left: 450px;
+  float: none;
+}
+
+/* Styles for the search icon */
+.anl-searchBar::after {
+  content: "\1F50D"; /* Unicode for a search icon (you can replace with your preferred icon) */
+  font-size: 18px; /* Adjust the size of the icon */
+  margin-left: 10px; /* Add some space between the icon and the text */
+  cursor: pointer; 
+}
+
+.anl-activities {
+  width: 350px; /* Set the width to 300px */
+  height: 50px;
+  background-color: #fff; /* Set the background color to white */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add a small border radius for slightly rounded corners */
+  /* display: flex; */
+  align-items: center;
+  padding: 0 10px; /* Add padding to the left and right */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  /* position: fixed;
+  float: none; */
+  margin: 10px; /* Add margin to create gaps between containers */
+}
+
+.anl-activities-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Spread items evenly across the row */
+  margin-bottom: 20px; /* Add margin to create spacing between rows */
+}
+
+/* Styles for card icon container 1*/
+.anl-activityIconContainer {
+  margin-left: 10px;
+  margin-top: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for body text */
+.anl-activityText {
+  margin-top: -25px;
+  padding-top: -10px;
+  margin-left: 65px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.anl-pie-chart-container {
+  /* Set the pie chart container to take up the full width and height of its parent container */
+  width: 100%;
+  height: 100%;
+
+  /* Center the pie chart both horizontally and vertically within the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

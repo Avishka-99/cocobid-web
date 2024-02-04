@@ -1,0 +1,77 @@
+.customerBids{
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 1%;
+    padding: 1%;
+    height: 100%;
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),  url('../../assets/images/coco.jpg');
+    background-size: contain;
+    align-content: flex-start;
+}
+.bid_btn{
+  padding: 14px;
+  display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: poppins-bold;
+	font-size: 22px;
+	color: white;
+	height: 6%;
+	width: 25%;
+	background-color: #274c5b;
+	border-radius: 25px;
+}
+.bid_btn:hover{
+  cursor: pointer;
+}
+.imagePreview{
+  height: 180px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+
+}
+.imagePreview:last-child{
+  margin-right: 0px;
+}
+.previewBox{
+  height: 100px;
+  width: 100px;
+
+  border-radius: 10px;
+}
+.uploadBtn{
+  display: inline-block;
+  background-color: dodgerblue;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.previewBox>img{
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+
+}
+.uploadBtn:hover{
+  background-color: royalblue;
+}
+.cancelBtn{
+  display: inline-block;
+  background-color: tomato;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.cancelBtn:hover{
+  background-color: red;
+}

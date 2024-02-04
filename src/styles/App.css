@@ -1,0 +1,69 @@
+@font-face {
+	font-family: luckiest-guy;
+	src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
+}
+@font-face {
+	font-family: rammetto-one;
+	src: url('../assets/fonts/RammettoOne-Regular.ttf');
+}
+@font-face {
+	font-family: poppins-regular;
+	src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+	font-family: yellowtail-regular;
+	src: url('../assets/fonts/Yellowtail-Regular.ttf');
+}
+@font-face {
+	font-family: poppins-extrabold;
+	src: url('../assets/fonts/Poppins-ExtraBold.ttf');
+}
+@font-face {
+	font-family: poppins-bold;
+	src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+	font-family: poppins-medium;
+	src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+	font-family: poppins-semibold;
+	src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+	font-family: fresh-coconut;
+	src: url('../assets/fonts/Fresh\ Coconut.ttf');
+}
+.outerContainer {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+.container {
+	width: 100%;
+	/* margin-left: 5%; */
+	flex: 1;
+	overflow-y: auto;
+
+	height: 100vh;
+	background-color: #ffffff;
+}
+.outerContainer {
+	box-sizing: border-box;
+}
+
+div {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+.buttonFillInside:hover {
+	cursor: pointer;
+}
+.buttonFillBorder:hover {
+	cursor: pointer;
+}
+::-webkit-input-placeholder { 
+	text-align:left; 
+	padding-left: 10px;
+}
