@@ -60,7 +60,7 @@ export default function AuctionDetails() {
                     </div>
                     <div style={{ padding: '8px', backgroundColor: '#274c5b', borderRadius: '8px' }}>
                         <span style={{ color: 'white' }}>Current Bid :</span>
-                        <span style={{ color: 'white' }}>{bidDetails && " Rs." + (bidDetails[0].max_bid).toFixed(2) }</span>
+                        <span style={{ color: 'white' }}>{bidDetails?bidDetails[0].max_bid?" Rs." + (bidDetails[0].max_bid).toFixed(2):"Rs."+(auctionDetails[0].basePrice).toFixed(2):"Rs."+(auctionDetails[0].basePrice).toFixed(2)}</span>
                     </div>
                 </div>
                 <div className='uploadBtn' style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => closeAuction(auctionDetails[0].Id)}>Close Auction</div>

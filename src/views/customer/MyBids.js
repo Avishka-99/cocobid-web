@@ -38,7 +38,7 @@ export default function MyBids() {
 			marginRight: '-50%',
 			transform: 'translate(-50%, -50%)',
 			width: '30%',
-			height: '80%',
+			height: '90%',
 			borderRadius: '15px',
 			outline: '3px solid #274c5b'
 		},
