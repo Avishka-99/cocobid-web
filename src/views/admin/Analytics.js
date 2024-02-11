@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/Admin/Analytics.css";
 import { LineChart, Line, PieChart, Pie, Cell, Tooltip, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
+import Axios from "../../api/Axios";
+import * as API_ENDPOINTS from '../../api/ApiEndpoints';
 
 export default function Analytics() {
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -11,7 +13,7 @@ export default function Analytics() {
 	const month = months[currentDate.getMonth()];
 	const year = currentDate.getFullYear();
 	const formattedDate = `${dayOfWeek} ${dayOfMonth.toString().padStart(2, '0')},  ${month} ${year}`;
-
+  const [todayChart,setTodayChart] = useState([]);
   const linedata = [
     {
       name: 'Monday',
@@ -65,7 +67,7 @@ export default function Analytics() {
   ];
 
   const bardata = [
-    { name: 'Total Sales', value: 150 },
+    { name: 'Total Auctions', value: 150 },
     { name: 'Total Revenue', value: 250 },
     { name: 'Expenses', value: 45 },
   ];
@@ -135,6 +137,12 @@ export default function Analytics() {
     setShowFilterMenu4(!showFilterMenu4);
   };
 
+  useEffect(()=>{
+    Axios.get(API_ENDPOINTS.FETCH_TODAY_ANALYTICS).then((response)=>{
+      console.log(response.data)
+      setTodayChart(response.data)
+    })
+  },[])
   return (
     <div className="Analytics-Container">
       <div className="anl-top">
@@ -158,18 +166,18 @@ export default function Analytics() {
             </div>
           </div>
           <div className="anl-subContainer">
-            <div className="anl-topLeftContainer">
+            <div className="anl-topLeftContainer" style={{paddingLeft:'10%'}}>
               <div className="anl-bodyText">Overview of Today(K)</div>
-              <ResponsiveContainer width={700} height={170}>
-                <BarChart data={bardata}>
+              {todayChart.length>0 && <ResponsiveContainer width={700} height={170}>
+                <BarChart data={todayChart}>
                   <XAxis dataKey="name" />
-                  <YAxis />
+                  {/* <YAxis /> */}
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
                   <Legend />
                   <Bar dataKey="value" fill="#7EB693" />
                 </BarChart>
-              </ResponsiveContainer>
+              </ResponsiveContainer>}
             </div>
           </div>
           <div className="anl-subContainer">
@@ -182,7 +190,7 @@ export default function Analytics() {
                 <br />
                 <span className="anl-countGoesUp"> +11.15% </span>
                 <br />
-                Total Sales
+                Total Auctions
               </div>
             </div>
             <div className="anl-cardContainer">

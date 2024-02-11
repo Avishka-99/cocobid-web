@@ -21,7 +21,7 @@
 	margin-top: 20px;
 	margin-left: 10px;
 	height: 128px;
-	background-image: url("../../assets/images/Admin/orders.png");
+	background-image: url("../../assets/images/Admin/Admin.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -36,6 +36,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 80px;
   }
   
   /* Styles for card icon container 3*/
@@ -43,7 +44,7 @@
 	margin-top: 20px;
 	margin-left: 2px;
 	height: 128px;
-	background-image: url("../../assets/images/Admin/cancelled.png");
+	background-image: url("../../assets/images/Admin/Cancelled.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

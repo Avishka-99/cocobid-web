@@ -10,6 +10,7 @@ import Axios from '../../api/Axios';
 import { SetUserAction } from '../../actions/SetUserAction';
 import * as ToastMessages from '../../components/ToastMessages';
 import { socket } from '../../socket';
+import Payments from '../../components/Payments';
 export default function LandingPage() {
 	const dispatch = useDispatch();
 	const [email, setEmail] = useState('');
@@ -157,4 +158,5 @@ export default function LandingPage() {
 			</div>
 		</div>
 	);
+
 }

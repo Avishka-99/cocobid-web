@@ -36,20 +36,20 @@ export default function Riders() {
     setShowFilterMenu2(!showFilterMenu2);
   };
 useEffect (() => {
-  Axios.get("http://localhost:5001/api/get_deliveryperson").then((response) => {
-    console.log(response.data);
-    setDelivery(response.data);
-  });
+  // Axios.get("http://localhost:5001/api/get_deliveryperson").then((response) => {
+  //   console.log(response.data);
+  //   setDelivery(response.data);
+  // });
 }, []);
 const ViewDelivery = (userId) => {
-  Axios.get("http://localhost:5001/api/get_delivery",{
-    params: {
-      userId: userId,
-    },
-  }).then((response) => {
-    console.log(response.data);
-    setSelectDelivery(response.data);
-  });
+  // Axios.get("http://localhost:5001/api/get_delivery",{
+  //   params: {
+  //     userId: userId,
+  //   },
+  // }).then((response) => {
+  //   console.log(response.data);
+  //   setSelectDelivery(response.data);
+  // });
 }
   return (
     <div className="Ride-Container">

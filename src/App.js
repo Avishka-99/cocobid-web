@@ -47,7 +47,7 @@ function App() {
   // localStorage.clear('type');
   //console.log(JSON.parse(atob(localStorage.getItem('token').split('.'))))
   const navigate = useNavigate();
-  var user = sessionStorage.getItem("type");
+  var user = "Admin";
   useEffect(() => {
     if (user) {
       navigate("/home");
@@ -57,7 +57,6 @@ function App() {
     }
   }, [user]);
   const [isSignedIn, setIsSignedIn] = useState(true);
-  const [role, setRole] = useState("customer");
   Modal.setAppElement('body')
   return (
     <div className="outerContainer">

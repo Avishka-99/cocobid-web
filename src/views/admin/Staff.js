@@ -78,11 +78,11 @@ export default function Staff() {
 	// },[]);
 	
 useEffect(() => {
-  Axios.get('http://localhost:5001/api/fetchstaff').then((response) => {
-    console.log(response.data);
-    setStaff(response.data);
-  }
-  );
+  // Axios.get('http://localhost:5001/api/fetchstaff').then((response) => {
+  //   console.log(response.data);
+  //   setStaff(response.data);
+  // }
+  // );
 }
 ,[]);
 

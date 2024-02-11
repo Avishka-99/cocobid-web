@@ -35,10 +35,10 @@ const ShowSidebar = (props) => {
 	];
 	const admin = [
 		{ id: 1, icon: <HomeIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Home', link: 'home', index: '1' },
-		{ id: 2, icon: <GroupsIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Staff', link: 'staff', index: '2' },
+		{ id: 2, icon: <GroupsIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Members', link: 'staff', index: '2' },
 		{ id: 3, icon: <TrendingUpIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Analytics', link: 'analytics', index: '3' },
-		{ id: 4, icon: <DirectionsBikeIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Riders', link: 'riders', index: '4' },
-		{ id: 5, icon: <DatasetIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Categories', link: 'categories', index: '5' },
+		// { id: 4, icon: <DirectionsBikeIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Riders', link: 'riders', index: '4' },
+		// { id: 5, icon: <DatasetIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Categories', link: 'categories', index: '5' },
 		{ id: 6, icon: <AccountCircleIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'Profile', link: 'profile', index: '6' },
 		{ id: 7, icon: <LogoutIcon sx={{ fontSize: 30, fill: '#6F767F' }} />, label: 'LogOut', link: 'logout', index: '7' },
 	];
