@@ -9,11 +9,16 @@ import * as API_ENDPOINTS from '../../api/ApiEndpoints';
 import BidCard from '../../components/BidCard';
 import Modal from 'react-modal';
 import BidDetails from '../../components/BidDetails';
+import Payments from '../../components/Payments';
+import { SetModalType } from '../../actions/SetUserAction';
 export default function MyBids() {
 	const [modalIsOpen, setIsOpen] = useState(false);
+	const [readyToPay, setReadyToPay] = useState();
 	const [type, setType] = useState(false)
 	const [bids, setBids] = useState()
 	const [triggerUseEffect, setTrigger] = useState(false);
+	const modalType = useSelector((state)=>state.SetUserReducer.modalType)
+	//var modalType = true;
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const navigateTo = (page) => {
@@ -21,13 +26,23 @@ export default function MyBids() {
 
 	};
 	const openModal = (type) => {
-		setType(type);
+		setType(true);
 		setIsOpen(true);
+		modalType = false;
+		dispatch(SetModalType('auction'))
 	}
 	const closeModal = () => {
 		setIsOpen(false);
 	}
 	const afterOpenModal = () => {
+		setReadyToPay(false);
+	}
+	const pay = (data) => {
+		setIsOpen(true)
+		setReadyToPay(true)
+		modalType = true;
+		dispatch(SetModalType('payment'))
+
 	}
 	const customStyles = {
 		content: {
@@ -57,7 +72,7 @@ export default function MyBids() {
 	return (
 		<div className='customerBids'>
 			{bids && bids.map((item) => (
-				<BidCard type='current' data={item} fun={openModal} />
+				<BidCard type='current' data={item} fun={openModal} payFunction={pay} />
 			))}
 			<Modal
 				isOpen={modalIsOpen}
@@ -66,7 +81,7 @@ export default function MyBids() {
 				style={customStyles}
 				contentLabel="Example Modal"
 			>
-				{modalIsOpen && <BidDetails/>}
+				{modalIsOpen && modalType && <Payments />}{modalIsOpen && !modalType && <BidDetails />}
 			</Modal>
 		</div>
 	);

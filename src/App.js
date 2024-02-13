@@ -47,7 +47,8 @@ function App() {
   // localStorage.clear('type');
   //console.log(JSON.parse(atob(localStorage.getItem('token').split('.'))))
   const navigate = useNavigate();
-  var user = "Admin";
+  var user = sessionStorage.getItem('type')
+  //var user = "Admin";
   useEffect(() => {
     if (user) {
       navigate("/home");
