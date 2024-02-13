@@ -22,7 +22,9 @@ export default function Payments() {
         amount: 1099,
       };
     useEffect(() => {
-        Axios.post(API_ENDPOINTS.PAYMENT_INTENT).then((response) => {
+        Axios.post(API_ENDPOINTS.PAYMENT_INTENT,{
+            amount:sessionStorage.getItem('amount')
+        }).then((response) => {
             setClientSecret(response.data.paymentIntent)
             console.log(response.data)
             setStripePromise(loadStripe("pk_test_51OhJSFJB0NyC4Hrh9sRe2jqUmXbMHMTctCKIMB9ivpM5OcA3Ozyn2y4EBFrGPEvuVzZcEZyNbQNgNStFWPvXx8od00lf2zs8wH"))

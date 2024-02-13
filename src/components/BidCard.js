@@ -169,7 +169,7 @@ export default function BidCard(props) {
                     }}><LocationOnIcon sx={{ fontSize: 30, fill: '#FFF' }} />{props.data.city}</div>
                 </div>
                 {props.data.max_bid && props.data.bid==props.data.max_bid &&
-                    <div className='payBtn' style={{ width: '96%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '2%' }} onClick={() => { props.payFunction(true) }}>Pay</div>      
+                    <div className='payBtn' style={{ width: '96%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '2%' }} onClick={() => { props.payFunction(props.data.bid) }}>Pay</div>      
                 }
                 {   props.data.max_bid && props.data.bid < props.data.max_bid &&
                     <div className='uploadBtn' style={{ width: '96%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '2%' }} onClick={() => { getAuctionImges(props.data.Id); props.fun(true); }}>View</div>

@@ -17,7 +17,7 @@ export default function MyBids() {
 	const [type, setType] = useState(false)
 	const [bids, setBids] = useState()
 	const [triggerUseEffect, setTrigger] = useState(false);
-	const modalType = useSelector((state)=>state.SetUserReducer.modalType)
+	const modalType = useSelector((state) => state.SetUserReducer.modalType)
 	//var modalType = true;
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -28,7 +28,7 @@ export default function MyBids() {
 	const openModal = (type) => {
 		setType(true);
 		setIsOpen(true);
-		modalType = false;
+		//modalType = false;
 		dispatch(SetModalType('auction'))
 	}
 	const closeModal = () => {
@@ -40,8 +40,9 @@ export default function MyBids() {
 	const pay = (data) => {
 		setIsOpen(true)
 		setReadyToPay(true)
-		modalType = true;
-		dispatch(SetModalType('payment'))
+		//modalType = true;
+		sessionStorage.setItem('amount',data)
+		navigate('/payment');
 
 	}
 	const customStyles = {
@@ -81,7 +82,7 @@ export default function MyBids() {
 				style={customStyles}
 				contentLabel="Example Modal"
 			>
-				{modalIsOpen && modalType && <Payments />}{modalIsOpen && !modalType && <BidDetails />}
+				{modalType == 'payment' ? <Payments /> : modalType == 'auction' ? <BidDetails /> : <></>}
 			</Modal>
 		</div>
 	);

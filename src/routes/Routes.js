@@ -4,6 +4,7 @@ export const customerRoutes = [
 	{id: 1, path: '/home', element: <UserViews.Home />},
 	{id: 2, path: '/mybids', element: <UserViews.MyBids />},
 	{id: 3, path: '/myauctions', element: <UserViews.MyAuctions />},
+	{id: 4, path: '/payment', element: <UserViews.Profile />},
 ];
 export const adminRoutes = [
 	{id: 1, path: '/home', element: <UserViews.AdminHome />},

@@ -4,7 +4,7 @@ const initialState = {
     auctionImages: '',
     auctionDetails: '',
     bidDetails: '',
-    modalType: ''
+    modalType: 'auction'
 }
 
 const SetUserReducer = (state = initialState, action) => {
